@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-section {
+  margin: 20px;
+}
+
+#paymentAmount {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#amountPaidText {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;  /* Max width of the image */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin-top: 20px;
+}
+
+#lotusEsprit {
+  width: 100%;
+  display: block;
+  opacity: 0.2;  /* Initially, the entire image is at 20% opacity */
+}
+
+.paid-portion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  background-image: url('lotus_esprit.jpg'); /* Use the same image */
+  background-size: cover;
+  background-repeat: no-repeat;
+}

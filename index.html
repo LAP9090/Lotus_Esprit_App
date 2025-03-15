@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lotus Esprit Savings App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="input-section">
+    <input type="number" id="paymentAmount" placeholder="Amount Paid">
+    <button onclick="updatePayment()">Update Payment</button>
+    <button onclick="resetPayment()">Reset</button>  <!-- Reset Button -->
+  </div>
+
+  <div id="amountPaidText">Amount Paid: $0</div>  <!-- Text displaying amount paid -->
+
+  <div class="image-container">
+    <img id="lotusEsprit" src="lotus_esprit.jpg" alt="Lotus Esprit" />
+    <div id="paidPortion" class="paid-portion"></div> <!-- Paid Portion -->
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
